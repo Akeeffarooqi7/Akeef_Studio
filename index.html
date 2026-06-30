@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Portfolio | Akeef Studio</title>
+    <meta name="description" content="Personal portfolio of Mohammed Akeef Farooqi — focused on web development, data analysis, Python, AI, and automation solutions." />
+    <link rel="canonical" href="" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Digital Portfolio | Akeef Studio" />
+    <meta property="og:description" content="Personal portfolio of Mohammed Akeef Farooqi — focused on web development, data analysis, Python, AI, and automation solutions." />
+    <meta property="og:site_name" content="Akeef Studio" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preload" href="https://client.studio/wp-content/themes/client/webfonts/SuisseIntl-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link href="https://client.studio/wp-content/themes/client/webfonts/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://client.studio/wp-content/themes/client/css/app.css?ver=20260419181710" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="antialiased min-h-screen bg-white text-zinc-900">
+    <div class="page-transition"></div>
+    <div class="layout">
+
+        <!-- Grid Background -->
+        <div class="grid-bg fixed inset-0 -z-10 w-screen h-[640px] overflow-hidden">
+            <svg class="absolute inset-0 -z-10 h-full w-full stroke-zinc-200 [mask-image:radial-gradient(100%_100%_at_top_left,white,transparent)]" aria-hidden="true">
+                <defs>
+                    <pattern id="grid-pattern" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+                        <path d="M.5 200V.5H200" fill="none" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" stroke-width="0" fill="url(#grid-pattern)" />
+            </svg>
+        </div>
+
+        <!-- Fixed Navigation -->
+        <div class="fixed-menu z-[999]">
+            <nav class="fixed top-10 w-[320px] lg:w-[360px] 2xl:w-[400px] flex items-center justify-center inset-x-0 mx-auto bg-black/70 lg:bg-black/50 backdrop-blur-xl rounded-full lg:px-6 shadow-inner z-50">
+                <ul class="tab-menu inline-flex font-mono tracking-widest uppercase z-50 relative">
+                    <li class="menu-item current-menu-item text-xs 2xl:text-sm"><a href="index.html">Home</a></li>
+                    <li class="menu-item text-xs 2xl:text-sm"><a href="about.html">About</a></li>
+                    <li class="menu-item text-xs 2xl:text-sm"><a href="work.html">Work</a></li>
+                    <li class="menu-item text-xs 2xl:text-sm"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero frontpage mt-20 text-anim">
+            <div class="relative max-w-[1480px] px-4 md:px-6 mx-auto flex items-center h-full pt-28 pb-32 lg:py-24 xl:pt-36 xl:pb-40">
+                <article class="lead text-center mx-auto">
+                    <h1>Akeef Studio</h1>
+                    <p class="text-zinc-600 max-w-3xl mx-auto mt-6 leading-relaxed">Melbourne-based web developer and data enthusiast working at the edge of websites, data, and AI. Building modern digital experiences, automation tools, and data-driven solutions for businesses, startups, and personal brands ready to grow online.</p>
+                </article>
+            </div>
+        </div>
+
+        <!-- Video Module -->
+        <div class="module-video mt-8 lg:mt-16">
+            <div class="thumb-container pb-8 px-4 md:px-6">
+                <div class="relative md:rounded-2xl overflow-hidden bg-zinc-100 max-w-[1480px] mx-auto">
+                    <video class="w-full h-full object-cover aspect-square lg:aspect-video" preload="none" loading="lazy" loop autoplay playsinline muted>
+                        <source src="video/hero.mp4" type="video/mp4">
+                        <div class="w-full aspect-video bg-gradient-to-br from-zinc-800 to-zinc-900 flex items-center justify-center">
+                            <p class="text-zinc-400 text-lg">Place your hero video at video/hero.mp4</p>
+                        </div>
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <!-- Intro Text -->
+        <div class="module-text relative text-anim">
+            <div class="max-w-[1480px] px-4 md:px-6 mx-auto py-16 lg:py-20">
+                <article class="max-w-4xl 2xl:max-w-5xl">
+                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-medium leading-snug">I help startups and businesses build their digital presence with clean code and modern design. From websites to data tools and AI automation — this is my core craft and what I do best.</h3>
+                </article>
+                <div class="w-full mt-8">
+                    <a class="btn-primary inline-block" href="about.html">About me &rarr;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Work Carousel -->
+        <div id="work" class="module-home-carousel relative mx-3">
+            <div class="home-carousel-container relative lg:mt-12">
+
+                <!-- Slides Navigation -->
+                <div class="frame relative h-[660px] lg:h-[780px] xl:h-[880px] 2xl:h-[1080px]">
+                    <nav class="slides-nav absolute bottom-5 lg:bottom-10 right-5 lg:right-10 gap-x-3 xl:gap-x-5 inline-flex z-50">
+                        <button class="slides-nav__item slides-nav__item--prev" aria-label="Previous slide">&larr;</button>
+                        <button class="slides-nav__item slides-nav__item--next" aria-label="Next slide">&rarr;</button>
+                    </nav>
+                </div>
+
+                <!-- Slides -->
+                <div class="slides h-[660px] lg:h-[780px] xl:h-[880px] 2xl:h-[1080px] relative lg:rounded-2xl overflow-hidden">
+
+                    <!-- Slide 1 -->
+                    <div class="slide bg-gray-300 lg:rounded-2xl overflow-hidden relative">
+                        <div class="text-white absolute bottom-8 md:bottom-12 left-5 md:left-10 z-20">
+                            <article class="max-w-2xl lg:max-w-4xl pr-6">
+                                <h2 class="text-3xl md:text-4xl lg:text-5xl font-medium">I help businesses and personal brands build their digital foundation</h2>
+                                <p class="mt-4 text-base md:text-lg text-white/80">I work with founders and individuals to shape their digital presence — from portfolio sites to full web platforms and data-driven tools.</p>
+                                <div class="h-[50px]"></div>
+                            </article>
+                        </div>
+                        <div class="absolute z-10 inset-0 w-full h-full bg-gradient-to-b from-transparent via-black/30 to-black/60"></div>
+                        <div class="slide__img absolute inset-0 lg:rounded-2xl z-5" style="background-image:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80'); background-size:cover; background-position:center;"></div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide bg-gray-300 lg:rounded-2xl overflow-hidden relative">
+                        <div class="text-white absolute bottom-8 md:bottom-12 left-5 md:left-10 z-20">
+                            <article class="max-w-2xl lg:max-w-4xl pr-6">
+                                <h2 class="text-3xl md:text-4xl lg:text-5xl font-medium">I create modern, responsive websites built to perform and last</h2>
+                                <p class="mt-4 text-base md:text-lg text-white/80">Clean code, fast performance, mobile-first design. Every site is engineered for usability and built to grow with you.</p>
+                                <div class="h-[50px]"></div>
+                            </article>
+                        </div>
+                        <div class="absolute z-10 inset-0 w-full h-full bg-gradient-to-b from-transparent via-black/30 to-black/60"></div>
+                        <div class="slide__img absolute inset-0 lg:rounded-2xl z-5" style="background-image:url('https://images.unsplash.com/photo-1547658719-da2b51169166?w=1920&q=80'); background-size:cover; background-position:center;"></div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide bg-gray-300 lg:rounded-2xl overflow-hidden relative">
+                        <div class="text-white absolute bottom-8 md:bottom-12 left-5 md:left-10 z-20">
+                            <article class="max-w-2xl lg:max-w-4xl pr-6">
+                                <h2 class="text-3xl md:text-4xl lg:text-5xl font-medium">Data, AI, and automation tools that solve real problems</h2>
+                                <p class="mt-4 text-base md:text-lg text-white/80">From dashboards to AI-powered apps — I build practical tools that turn data into insights and save you time through automation.</p>
+                                <div class="h-[50px]"></div>
+                            </article>
+                        </div>
+                        <div class="absolute z-10 inset-0 w-full h-full bg-gradient-to-b from-transparent via-black/30 to-black/60"></div>
+                        <div class="slide__img absolute inset-0 lg:rounded-2xl z-5" style="background-image:url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1920&q=80'); background-size:cover; background-position:center;"></div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="slide bg-gray-300 lg:rounded-2xl overflow-hidden relative">
+                        <div class="text-white absolute bottom-8 md:bottom-12 left-5 md:left-10 z-20">
+                            <article class="max-w-2xl lg:max-w-4xl pr-6">
+                                <h2 class="text-3xl md:text-4xl lg:text-5xl font-medium">Ongoing support to keep your digital presence evolving</h2>
+                                <p class="mt-4 text-base md:text-lg text-white/80">Launch is just the beginning. I provide ongoing maintenance, updates, and optimisation so your website and tools keep performing at their best.</p>
+                                <div class="h-[50px]"></div>
+                            </article>
+                        </div>
+                        <div class="absolute z-10 inset-0 w-full h-full bg-gradient-to-b from-transparent via-black/30 to-black/60"></div>
+                        <div class="slide__img absolute inset-0 lg:rounded-2xl z-5" style="background-image:url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=80'); background-size:cover; background-position:center;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text Module -->
+        <div class="module-text relative text-anim">
+            <div class="max-w-[1480px] px-4 md:px-6 mx-auto py-16 lg:py-20">
+                <article class="max-w-4xl 2xl:max-w-5xl">
+                    <h3 class="text-2xl md:text-3xl lg:text-4xl font-medium leading-snug">I partner with founders and individuals navigating digital transitions — new brands, website rebuilds, and data-driven growth.</h3>
+                    <p class="text-zinc-500 mt-4 text-lg">If a project doesn't make a real impact, I'd rather point you in the right direction than take it on.</p>
+                </article>
+            </div>
+        </div>
+
+        <!-- Projects Flickity Carousel -->
+        <div class="module-projects my-6">
+            <div class="full overflow-hidden">
+                <div class="relative">
+                    <div class="projects-carousel flex gap-4 lg:gap-6 overflow-x-auto snap-x snap-mandatory px-4 pb-10 scrollbar-hide">
+
+                        <!-- Project 1: Oriva -->
+                        <div class="project-card flex-none w-[85%] sm:w-[60%] xl:w-[30%] h-[480px] lg:h-[560px] 2xl:max-w-[35rem] bg-neutral-100 rounded-3xl overflow-hidden relative group hover:shadow-lg transition-shadow duration-500 snap-center">
+                            <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&q=80" alt="Oriva — The Art of Dentistry" class="w-full h-full object-cover absolute inset-0" />
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-b from-black/30 to-black opacity-60 md:group-hover:opacity-80 transition-opacity duration-1000"></div>
+                            <div class="absolute bottom-2 left-0 w-full p-5 text-white z-20">
+                                <article>
+                                    <h3 class="text-xl lg:text-2xl font-medium">Oriva — The Art of Dentistry</h3>
+                                    <p class="text-sm lg:text-base mt-2 leading-tight md:leading-snug text-white/80">A premium frontend landing page for a fictional luxury dental atelier. Designed with quiet visuals, precise spacing, smooth motion, and a high-end hospitality-style brand feel instead of a normal clinic website.</p>
+                                    <a class="btn-card mt-4 inline-block border border-white/30 text-white text-[11px] font-mono uppercase tracking-wider px-4 py-1.5 rounded-full hover:bg-white/10 transition-colors" href="#">Visit &rarr;</a>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: Domea -->
+                        <div class="project-card flex-none w-[85%] sm:w-[60%] xl:w-[30%] h-[480px] lg:h-[560px] 2xl:max-w-[35rem] bg-neutral-100 rounded-3xl overflow-hidden relative group hover:shadow-lg transition-shadow duration-500 snap-center">
+                            <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" alt="Doméa — Luxury Interior Design Studio" class="w-full h-full object-cover absolute inset-0" />
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-b from-black/30 to-black opacity-60 md:group-hover:opacity-80 transition-opacity duration-1000"></div>
+                            <div class="absolute bottom-2 left-0 w-full p-5 text-white z-20">
+                                <article>
+                                    <h3 class="text-xl lg:text-2xl font-medium">Dom&eacute;a — Luxury Interior Design Studio</h3>
+                                    <p class="text-sm lg:text-base mt-2 leading-tight md:leading-snug text-white/80">A boutique interior design studio website with elegant typography, slow motion effects, editorial-style galleries, and a luxury visual direction built for premium interiors and lifestyle branding.</p>
+                                    <a class="btn-card mt-4 inline-block border border-white/30 text-white text-[11px] font-mono uppercase tracking-wider px-4 py-1.5 rounded-full hover:bg-white/10 transition-colors" href="#">Visit &rarr;</a>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: PhysioCare -->
+                        <div class="project-card flex-none w-[85%] sm:w-[60%] xl:w-[30%] h-[480px] lg:h-[560px] 2xl:max-w-[35rem] bg-neutral-100 rounded-3xl overflow-hidden relative group hover:shadow-lg transition-shadow duration-500 snap-center">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80" alt="PhysioCare — Clinic Platform" class="w-full h-full object-cover absolute inset-0" />
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-b from-black/30 to-black opacity-60 md:group-hover:opacity-80 transition-opacity duration-1000"></div>
+                            <div class="absolute bottom-2 left-0 w-full p-5 text-white z-20">
+                                <article>
+                                    <h3 class="text-xl lg:text-2xl font-medium">PhysioCare — Clinic Platform</h3>
+                                    <p class="text-sm lg:text-base mt-2 leading-tight md:leading-snug text-white/80">A full-stack Flask clinic platform with patient booking, role-based dashboards, AI chatbot triage, admin reporting, and a public marketing website built and shipped end-to-end.</p>
+                                    <a class="btn-card mt-4 inline-block border border-white/30 text-white text-[11px] font-mono uppercase tracking-wider px-4 py-1.5 rounded-full hover:bg-white/10 transition-colors" href="#">Visit &rarr;</a>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: Al-Safar Travels -->
+                        <div class="project-card flex-none w-[85%] sm:w-[60%] xl:w-[30%] h-[480px] lg:h-[560px] 2xl:max-w-[35rem] bg-neutral-100 rounded-3xl overflow-hidden relative group hover:shadow-lg transition-shadow duration-500 snap-center">
+                            <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=800&q=80" alt="Al-Safar Travels" class="w-full h-full object-cover absolute inset-0" />
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-b from-black/30 to-black opacity-60 md:group-hover:opacity-80 transition-opacity duration-1000"></div>
+                            <div class="absolute bottom-2 left-0 w-full p-5 text-white z-20">
+                                <article>
+                                    <h3 class="text-xl lg:text-2xl font-medium">Al-Safar Travels</h3>
+                                    <p class="text-sm lg:text-base mt-2 leading-tight md:leading-snug text-white/80">A luxury travel landing page with a cinematic hero section, curated itinerary sections, smooth GSAP animations, and a calm booking flow for premium travel experiences.</p>
+                                    <a class="btn-card mt-4 inline-block border border-white/30 text-white text-[11px] font-mono uppercase tracking-wider px-4 py-1.5 rounded-full hover:bg-white/10 transition-colors" href="#">Visit &rarr;</a>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Project 5: MSquare Affinity -->
+                        <div class="project-card flex-none w-[85%] sm:w-[60%] xl:w-[30%] h-[480px] lg:h-[560px] 2xl:max-w-[35rem] bg-neutral-100 rounded-3xl overflow-hidden relative group hover:shadow-lg transition-shadow duration-500 snap-center">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80" alt="MSquare Affinity — Data & AI Company Website" class="w-full h-full object-cover absolute inset-0" />
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-b from-black/30 to-black opacity-60 md:group-hover:opacity-80 transition-opacity duration-1000"></div>
+                            <div class="absolute bottom-2 left-0 w-full p-5 text-white z-20">
+                                <article>
+                                    <h3 class="text-xl lg:text-2xl font-medium">MSquare Affinity — Data &amp; AI</h3>
+                                    <p class="text-sm lg:text-base mt-2 leading-tight md:leading-snug text-white/80">A professional startup company website for MSquare Affinity, built to present data, AI, automation, and digital solutions with a modern business-focused design.</p>
+                                    <a class="btn-card mt-4 inline-block border border-white/30 text-white text-[11px] font-mono uppercase tracking-wider px-4 py-1.5 rounded-full hover:bg-white/10 transition-colors" href="https://msqaureaffinity.com.au" target="_blank">Visit Website &rarr;</a>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Project 6: BNB Arbitrage Tracker -->
+                        <div class="project-card flex-none w-[85%] sm:w-[60%] xl:w-[30%] h-[480px] lg:h-[560px] 2xl:max-w-[35rem] bg-neutral-100 rounded-3xl overflow-hidden relative group hover:shadow-lg transition-shadow duration-500 snap-center">
+                            <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80" alt="BNB Arbitrage Tracker" class="w-full h-full object-cover absolute inset-0" />
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-b from-black/30 to-black opacity-60 md:group-hover:opacity-80 transition-opacity duration-1000"></div>
+                            <div class="absolute bottom-2 left-0 w-full p-5 text-white z-20">
+                                <article>
+                                    <h3 class="text-xl lg:text-2xl font-medium">BNB Arbitrage Tracker</h3>
+                                    <p class="text-sm lg:text-base mt-2 leading-tight md:leading-snug text-white/80">A live crypto price tracking web app built with Python and Flask to compare BNB prices, calculate fees, and identify possible arbitrage opportunities.</p>
+                                    <a class="btn-card mt-4 inline-block border border-white/30 text-white text-[11px] font-mono uppercase tracking-wider px-4 py-1.5 rounded-full hover:bg-white/10 transition-colors" href="#">Visit &rarr;</a>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Project 7: Expense Tracker -->
+                        <div class="project-card flex-none w-[85%] sm:w-[60%] xl:w-[30%] h-[480px] lg:h-[560px] 2xl:max-w-[35rem] bg-neutral-100 rounded-3xl overflow-hidden relative group hover:shadow-lg transition-shadow duration-500 snap-center">
+                            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80" alt="Expense Tracker Web App" class="w-full h-full object-cover absolute inset-0" />
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-b from-black/30 to-black opacity-60 md:group-hover:opacity-80 transition-opacity duration-1000"></div>
+                            <div class="absolute bottom-2 left-0 w-full p-5 text-white z-20">
+                                <article>
+                                    <h3 class="text-xl lg:text-2xl font-medium">Expense Tracker Web App</h3>
+                                    <p class="text-sm lg:text-base mt-2 leading-tight md:leading-snug text-white/80">A full-stack expense management app with user login, country-based currency selection, monthly and yearly totals, and PDF statement generation.</p>
+                                    <a class="btn-card mt-4 inline-block border border-white/30 text-white text-[11px] font-mono uppercase tracking-wider px-4 py-1.5 rounded-full hover:bg-white/10 transition-colors" href="#">Visit &rarr;</a>
+                                </article>
+                            </div>
+                        </div>
+
+                        <!-- Project 8: Stock Portfolio Tracker -->
+                        <div class="project-card flex-none w-[85%] sm:w-[60%] xl:w-[30%] h-[480px] lg:h-[560px] 2xl:max-w-[35rem] bg-neutral-100 rounded-3xl overflow-hidden relative group hover:shadow-lg transition-shadow duration-500 snap-center">
+                            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80" alt="Stock Portfolio Tracker" class="w-full h-full object-cover absolute inset-0" />
+                            <div class="absolute inset-0 w-full h-full bg-gradient-to-b from-black/30 to-black opacity-60 md:group-hover:opacity-80 transition-opacity duration-1000"></div>
+                            <div class="absolute bottom-2 left-0 w-full p-5 text-white z-20">
+                                <article>
+                                    <h3 class="text-xl lg:text-2xl font-medium">Stock Portfolio Tracker</h3>
+                                    <p class="text-sm lg:text-base mt-2 leading-tight md:leading-snug text-white/80">A Python-based portfolio tracking tool that helps users add stocks, check live prices, view holdings, and understand portfolio performance with charts.</p>
+                                    <a class="btn-card mt-4 inline-block border border-white/30 text-white text-[11px] font-mono uppercase tracking-wider px-4 py-1.5 rounded-full hover:bg-white/10 transition-colors" href="#">Visit &rarr;</a>
+                                </article>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer id="contact" class="footer relative pt-12 overflow-hidden" aria-labelledby="footer">
+            <div class="max-w-[1480px] px-4 md:px-6 mx-auto">
+                <div class="mt-24 font-medium">
+                    <ul class="flex flex-wrap justify-center gap-x-8 gap-y-3 text-base list-none">
+                        <li><a href="index.html" class="hover:text-zinc-500 transition-colors">Home</a></li>
+                        <li><a href="#work" class="hover:text-zinc-500 transition-colors">Work</a></li>
+                        <li><a href="about.html" class="hover:text-zinc-500 transition-colors">About</a></li>
+                        <li><a href="mailto:akeef.farooqi@gmail.com" class="hover:text-zinc-500 transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="pt-4 pb-8 md:pb-20 mt-4">
+                    <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-medium text-zinc-400 text-sm">
+                        <p>&copy; 2025 Akeef Studio</p>
+                        <p>Melbourne, Victoria, Australia</p>
+                        <p><a href="tel:+61428107321" class="hover:text-zinc-600 transition-colors">+61 4 2810 7321</a></p>
+                        <p><a href="mailto:akeef.farooqi@gmail.com" class="hover:text-zinc-600 transition-colors">akeef.farooqi@gmail.com</a></p>
+                        <p><a href="https://www.linkedin.com/in/akeeffarooqi7/" target="_blank" class="hover:text-zinc-600 transition-colors">LinkedIn</a></p>
+                        <p><a href="https://github.com/Akeeffarooqi7" target="_blank" class="hover:text-zinc-600 transition-colors">GitHub</a></p>
+                        <p><a href="privacy.html" class="hover:text-zinc-600 transition-colors">Privacy</a></p>
+                        <p><a href="cookies.html" class="hover:text-zinc-600 transition-colors">Cookies</a></p>
+                    </div>
+                </div>
+                <div class="flex justify-center -mb-4 md:-mb-10 overflow-hidden pt-6">
+                    <h2 class="text-[12vw] md:text-[10vw] font-medium text-zinc-100 whitespace-nowrap select-none leading-none">Akeef Studio</h2>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

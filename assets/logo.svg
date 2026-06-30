@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8dcc4"/>
+      <stop offset="100%" stop-color="#c9a96e"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(6,8)">
+    <path d="M22 2 L42 42 L36 42 L31 31 L13 31 L8 42 L2 42 Z M16 26 L28 26 L22 13 Z"
+          fill="url(#g)" />
+    <circle cx="38" cy="10" r="2.4" fill="#c9a96e"/>
+  </g>
+  <text x="62" y="32" font-family="Cormorant Garamond, Playfair Display, serif"
+        font-size="22" letter-spacing="2" fill="#f5efe4">AKEEF'S</text>
+  <text x="62" y="50" font-family="Inter, system-ui, sans-serif"
+        font-size="10" letter-spacing="6" fill="#c9a96e">STUDIO</text>
+</svg>
