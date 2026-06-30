@@ -9,6 +9,17 @@ html {
     scroll-behavior: smooth !important;
 }
 
+/* Line break visible on mobile only */
+.mobile-break {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .mobile-break {
+        display: none;
+    }
+}
+
 /* ---- Carousel Slides ---- */
 .module-home-carousel {
     position: relative;
