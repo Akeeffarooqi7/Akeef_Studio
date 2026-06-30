@@ -65,11 +65,10 @@
 
                 <!-- Contact Form -->
                 <div class="contact-form">
-                    <form id="contact-form" class="space-y-8" action="https://api.web3forms.com/submit" method="POST">
+                    <form id="contact-form" class="space-y-8">
                         <input type="hidden" name="access_key" value="89939c3f-02ff-452d-897a-99e0884cc34f">
                         <input type="hidden" name="subject" value="New Contact Form Submission — Akeef Studio">
                         <input type="hidden" name="from_name" value="Akeef Studio Website">
-                        <input type="hidden" name="redirect" value="https://web3forms.com/success">
                         <div>
                             <label for="name" class="block text-sm font-mono uppercase tracking-widest text-zinc-500 mb-3">Your name</label>
                             <input type="text" id="name" name="name" required placeholder="Full name" class="w-full border-b-2 border-zinc-200 bg-transparent py-3 text-lg focus:border-zinc-900 focus:outline-none transition-colors placeholder:text-zinc-300" />
@@ -101,8 +100,16 @@
                         <div class="pt-4 pb-12">
                             <button type="submit" class="btn-primary">Send message &rarr;</button>
                         </div>
-                        <div id="form-status" class="text-sm font-mono text-zinc-500 hidden"></div>
                     </form>
+
+                    <!-- Success Popup -->
+                    <div id="form-popup" class="form-popup hidden">
+                        <div class="form-popup-card">
+                            <h3>Thanks for messaging!</h3>
+                            <p>We will get in touch shortly.</p>
+                            <button onclick="closePopup()" class="btn-primary">Got it</button>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Contact Details -->
@@ -177,5 +184,45 @@
 </div>
 
 <script src="js/app.js"></script>
+<script>
+const contactForm = document.getElementById('contact-form');
+const formPopup = document.getElementById('form-popup');
+
+contactForm.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = contactForm.querySelector('button[type="submit"]');
+    btn.textContent = 'Sending...';
+    btn.disabled = true;
+
+    const formData = new FormData(contactForm);
+    try {
+        const res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: formData
+        });
+        const data = await res.json();
+        if (data.success) {
+            contactForm.reset();
+            btn.textContent = 'Send message →';
+            btn.disabled = false;
+            formPopup.classList.remove('hidden');
+            requestAnimationFrame(() => formPopup.classList.add('show'));
+        } else {
+            btn.textContent = 'Send message →';
+            btn.disabled = false;
+            alert('Something went wrong. Please try again.');
+        }
+    } catch (err) {
+        btn.textContent = 'Send message →';
+        btn.disabled = false;
+        alert('Network error. Please try again.');
+    }
+});
+
+function closePopup() {
+    formPopup.classList.remove('show');
+    setTimeout(() => formPopup.classList.add('hidden'), 400);
+}
+</script>
 </body>
 </html>
