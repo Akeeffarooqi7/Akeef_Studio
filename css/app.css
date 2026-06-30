@@ -207,6 +207,63 @@ html {
     display: none !important;
 }
 
+/* Founder card */
+.founder-card {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2.5rem;
+    background: #fafafa;
+    border: 1px solid #e4e4e7;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .founder-card {
+        flex-direction: row !important;
+        text-align: left;
+        gap: 3rem;
+        padding: 3rem;
+    }
+}
+
+.founder-card img {
+    width: 14rem;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 1rem;
+    flex-shrink: 0;
+}
+
+.founder-card h3 {
+    font-size: 0.75rem !important;
+    font-family: 'JetBrains Mono', ui-monospace, monospace;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    color: #a1a1aa;
+    margin-bottom: 0.75rem;
+}
+
+.founder-card h2 {
+    font-size: 1.5rem !important;
+    font-weight: 600;
+    color: #18181b;
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    .founder-card h2 {
+        font-size: 1.875rem !important;
+    }
+}
+
+.founder-card p {
+    color: #52525b;
+    line-height: 1.6;
+}
+
 /* Contact form styling */
 .contact-form input,
 .contact-form textarea,
